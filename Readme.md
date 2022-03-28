@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ольга Бориско](https://up.htmlacademy.ru/adaptive/25/user/1958591).
-* Наставник: `Неизвестно`.
+* Наставник:[Магомед Кандаев](https://htmlacademy.ru/profile/magomedkandaev).
 
 ---
 
