@@ -7,7 +7,7 @@
     <base href="https://htmlacademy-adaptive.github.io/1958591-cat-energy-25/3/">
 </head>
 
-  <body class="page-catalog">
+  <body class="page__body">
     <header class="lead-header">
       <a class="lead-header__logo logo">
         <svg class="logo__icon" width="34" height="38" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M6.07 20.72v-2.26a143.26 143.26 0 0 1 20.17-1.33c0 .6 0 1.21-.06 1.82a25.52 25.52 0 0 1 6-1.82A16.67 16.67 0 0 0 .19 20.39l5.88.33Zm21.17 3.51c-1.16 1.28-1.39 1.2-1.39 3.45v9.18A16.64 16.64 0 0 0 33.32 23a17.3 17.3 0 0 0-.32-3.1 33.1 33.1 0 0 0-5.76 4.33ZM6.36 25.72s-3.79-1.44-5.19-1.83A8.54 8.54 0 0 0 0 23.61a16.65 16.65 0 0 0 8.68 14L6.36 25.72Z" fill="#FDC305"/><path d="M26.29 17.12A89.8 89.8 0 0 0 24.89.65S24.75-.64 24 .41a14.22 14.22 0 0 0-1.2 3.94 70.34 70.34 0 0 0-12.77.34C9.24 2 7.85.75 7.18 1c-.67.25-.72 3.31-.72 3.31l-.33 14.1a143.21 143.21 0 0 1 20.16-1.29Z" fill="#F06351"/><path d="M12.41 14c0-.09 1 .68 1.41.92.41.24.61.42.61.59 0 .17-.27.34-.63.34s-.91-.12-1-.27h1.23A8.34 8.34 0 0 1 12.41 14Zm7.48.11-1.09 1.33c0 .06-.17.35.18.3a7.35 7.35 0 0 0 1.22-.29c.11 0 .07-.19-.11-.17-.18.02-.69.05-1 .11l.84-1.26s.07-.13-.04-.02Zm-3.14 6.09a2.3 2.3 0 0 0 1.09-1c.28-.65 0-.91-.44-1a2.43 2.43 0 0 0-1.74.34c-.39.36-.34.72-.05 1a5.34 5.34 0 0 0 1.14.66Z" fill="#000"/><path d="M16.35 21.45a1.92 1.92 0 0 1-.46.6 1.73 1.73 0 0 1-1 .38 2.15 2.15 0 0 1-1.47-.43 2.3 2.3 0 0 1-.53-.44c-.1-.11-.22-.2-.36-.26 0 0 .75 4.1 2.57 4.75 1.82.65 2.14-.75 2.2-1.13a5.61 5.61 0 0 0-.82-3.23c-.02-.31-.03-.11-.13-.24Z" fill="#F06351"/><path d="M14.71 22.59a3.44 3.44 0 0 1-2.36-1.47.14.14 0 0 1 .03-.15.14.14 0 0 1 .2 0 3.26 3.26 0 0 0 2.11 1.3 2.09 2.09 0 0 0 1.63-1l.14-.19.1.21s.37.76 1 .8c.63.04 1.05-.41 1.61-1.28a.14.14 0 0 1 .2 0 .15.15 0 0 1 .05.2c-.64 1-1.27 1.44-1.88 1.4a1.55 1.55 0 0 1-1.12-.76 2.26 2.26 0 0 1-1.71.94Z" fill="#000"/><path d="M26.24 18.92a58.63 58.63 0 0 0-5.07 5.19A31.63 31.63 0 0 1 15.88 29c-.22-.53-1.62-1.51-1.62-1.51s-3.13-2.14-5.18-3.82a34.14 34.14 0 0 1-3.13-3l-2-.11a22.57 22.57 0 0 0 12 8.8c.86-.14 3.27-1.86 5.07-3.26a58.13 58.13 0 0 0 5.94-5.89 6.15 6.15 0 0 0 1.14-2c-1.1.39-1.86.71-1.86.71Z" fill="#F06351"/></g><defs><clipPath id="a1"><path fill="#fff" d="M0 0h33.32v37.61H0z"/></clipPath></defs></svg>
@@ -43,11 +43,15 @@
     <main class="main-container">
       <section class="products">
         <div class="products__wrapper">
-          <h1 class="products_caption">Каталог продукции</h1>
+          <h1 class="products__caption">Каталог продукции</h1>
           <ul class="products__list products-list">
             <li class="products-list__card card">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
-              <img class="card__image" src="img/catalog-1.jpg"  alt="Маленькая оранжевая банка с обедом для котика" width="68" height="86">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <a class="card__image-link" href="#">
+                <img class="card__image" src="img/catalog-1.jpg"  alt="Маленькая оранжевая банка с обедом для котика" width="68" height="86">
+              </a>
               <dl class="card__list">
                 <div class="card__item">
                   <dt class="card__parametr">
@@ -77,8 +81,12 @@
               <a class="card__button button" href="#">Заказать</a>
             </li>
             <li class="products-list__card card">
-              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
-              <img class="card__image" src="img/catalog-2.jpg"  alt="Большая оранжевая банка с обедом для котика" width="84" height="101">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <a class="card__image-link" href="#">
+                <img class="card__image" src="img/catalog-2.jpg"  alt="Большая оранжевая банка с обедом для котика" width="84" height="101">
+              </a>
               <dl class="card__list">
                 <div class="card__item">
                   <dt class="card__parametr">
@@ -108,8 +116,12 @@
               <a class="card__button button" href="#">Заказать</a>
             </li>
             <li class="products-list__card card">
-              <h3 class="card__title">Cat Energy PRO 500 г</h3>
-              <img class="card__image" src="img/catalog-3.jpg"  alt="Маленькая зеленая банка с обедом для котика" width="68" height="78">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+              </a>
+              <a class="card__image-link" href="#">
+                <img class="card__image" src="img/catalog-3.jpg"  alt="Маленькая зеленая банка с обедом для котика" width="68" height="78">
+              </a>
               <dl class="card__list">
                 <div class="card__item">
                   <dt class="card__parametr">
@@ -139,8 +151,12 @@
               <a class="card__button button" href="#">Заказать</a>
             </li>
             <li class="products-list__card card">
-              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
-              <img class="card__image" src="img/catalog-4.jpg"  alt="Большая зеленая банка с обедом для котика" width="84" height="101">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+              </a>
+              <a class="card__image-link" href="#">
+                <img class="card__image" src="img/catalog-4.jpg"  alt="Большая зеленая банка с обедом для котика" width="84" height="101">
+              </a>
               <dl class="card__list">
                 <div class="card__item">
                   <dt class="card__parametr">
@@ -170,9 +186,13 @@
               <a class="card__button button" href="#">Заказать</a>
             </li>
             <li class="products-list__card card">
-              <h3 class="card__title">Cat Energy SLIM 500 г</h3>
-              <img class="card__image" src="img/catalog-5.jpg"  alt="Маленькая синяя банка с обедом для котика" width="68" height="78">
-              <dl class="card__list">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Cat Energy SLIM 500 г</h3>
+              </a>
+              <a class="card__image-link" href="#">
+                <img class="card__image" src="img/catalog-5.jpg"  alt="Маленькая синяя банка с обедом для котика" width="68" height="78">
+              </a>
+                <dl class="card__list">
                 <div class="card__item">
                   <dt class="card__parametr">
                     масса
@@ -201,8 +221,12 @@
               <a class="card__button button" href="#">Заказать</a>
             </li>
             <li class="products-list__card card">
-              <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
-              <img class="card__image" src="img/catalog-6.jpg"  alt="Большая синяя банка с обедом для котика" width="84" height="100">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
+              </a>
+              <a class="card__image-link" href="#">
+                <img class="card__image" src="img/catalog-6.jpg"  alt="Большая синяя банка с обедом для котика" width="84" height="100">
+              </a>
               <dl class="card__list">
                 <div class="card__item">
                   <dt class="card__parametr">
@@ -232,8 +256,12 @@
               <a class="card__button button" href="#">Заказать</a>
             </li>
             <li class="products-list__card card">
-              <h3 class="card__title">Cat Energy SLIM 500 г</h3>
-              <img class="card__image" src="img/catalog-7.jpg"  alt="Маленькая сиреневая банка с обедом для котика" width="72" height="84">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Cat Energy SLIM 500 г</h3>
+              </a>
+              <a class="card__image-link" href="#">
+                <img class="card__image" src="img/catalog-7.jpg"  alt="Маленькая сиреневая банка с обедом для котика" width="72" height="84">
+              </a>
               <dl class="card__list">
                 <div class="card__item">
                   <dt class="card__parametr">
@@ -262,14 +290,14 @@
               </dl>
               <a class="card__button button" href="#">Заказать</a>
             </li>
+            <li class="products-list__card card show-more">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title">Показать еще 100500 товаров</h3>
+              </a>
+              <p class="card__description">На самом деле вкусов гораздо больше!</p>
+              <a class="card__button card__button--light button" href="#">Показать все</a>
+            </li>
           </ul>
-        </div>
-      </section>
-      <section class="show-more">
-        <div class="show-more__wrapper">
-          <h3 class="show-more__title">Показать еще 100500 товаров</h3>
-          <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-          <a class="show-more__button button" href="#">Показать все</a>
         </div>
       </section>
       <section class="addition">
@@ -313,7 +341,7 @@
       <section class="lead-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__promo">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__promo">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
           <img class="contacts__location" src="img/location.jpg" width="320" height="362" alt="Локация магазина Кэт Энержи.">
