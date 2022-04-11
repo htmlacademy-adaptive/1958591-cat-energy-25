@@ -108,7 +108,7 @@
   padding-top: 27px;
   padding-bottom: 164px;
   background-color: #68b738;
-  background-image: url("../img/layer-background-phone.png"), url("../img/cat-background-phone.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-phone.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
