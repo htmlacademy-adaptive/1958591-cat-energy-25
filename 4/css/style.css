@@ -31,7 +31,7 @@
   min-height: 100%;
   width: 320px;
   margin: 0 auto;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -195,7 +195,7 @@
 .solutions__description {
   margin: 0;
   margin-bottom: 38px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -271,7 +271,7 @@
 .features__description {
   margin: 0;
   padding-left: 80px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -298,7 +298,7 @@
 .example__text {
   margin: 0;
   margin-bottom: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -333,7 +333,7 @@
   display: block;
   width: 87px;
   background-color: #eaeaea;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -390,7 +390,7 @@
   text-transform: uppercase;
 }
 .contacts__text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -402,7 +402,7 @@
   padding: 0 20px;
 }
 .copyright__link {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -482,21 +482,21 @@
   opacity: 60%;
 }
 .card__parametr {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   text-align: center;
 }
 .card__value {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   text-align: center;
 }
 .card__description {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -567,14 +567,14 @@
   opacity: 60%;
 }
 .addition-card__description {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   text-align: center;
 }
 .addition-card__price {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -598,7 +598,7 @@
   position: relative;
   display: block;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -650,7 +650,7 @@
   line-height: 20px;
 }
 .site-form__legend {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
