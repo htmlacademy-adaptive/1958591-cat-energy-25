@@ -1,0 +1,135 @@
+.solutions__header {
+  padding-top: 27px;
+  padding-bottom: 164px;
+  background-color: @basic-green;
+  background-image: url("../img/layer-background-phone.png"), url("../img/cat-background-phone.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.solutions__title {
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: @basic-white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.solutions__motto {
+  margin: 0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: @basic-white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.solutions__wrapper {
+  padding: 0 @padding-site;
+  padding-top: 138px;
+  background-color: @basic-white;
+}
+
+.solutions__button {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 0;
+  width: 280px;
+
+  &::before {
+    content: url("../img/can-phone.png");
+    position: absolute;
+    top: -270px;
+    left: 0%;
+
+  }
+}
+
+.solutions__list {
+  .list-style;
+  padding: 20px 0;
+}
+
+.solutions__item {
+  position: relative;
+  background-color: @basic-grey;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    position: absolute;
+  }
+}
+
+.solutions__item--less {
+  &::after {
+    content: url("../img/cat_back.png");
+    top: 21px;
+    left: 22px;
+  }
+}
+
+.solutions__item--more {
+  &::after {
+    content: url("../img/cat_back2.png");
+    top: 24px;
+    left: 13px;
+  }
+}
+
+
+.solutions__subject {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 91px;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: @basic-black;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.solutions__description {
+  margin: 0;
+  margin-bottom: 38px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @special-dark-grey;
+  text-align: left;
+}
+
+.solutions__link {
+  position: relative;
+  padding: 4px 0;
+  padding-right: 49px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @basic-black;
+
+  &:active {
+    opacity: 30%;
+  }
+
+}

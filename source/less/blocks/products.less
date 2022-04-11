@@ -1,0 +1,121 @@
+.products {
+  background-color: @basic-white;
+  color: @special-dark-grey;
+
+}
+
+.products__caption {
+  padding: 0 @padding-site;
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  color: @basic-black;
+}
+
+.products-list {
+  .list-style;
+}
+
+.card {
+  padding: 20px @padding-site;
+  padding-bottom: 25px;
+  border-top: 1px solid @special-grey-2;
+
+  &:last-child {
+    border-bottom: 1px solid @special-grey-2;
+  }
+}
+
+.card__title-link {
+  text-decoration: none;
+}
+
+.card__title {
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+
+  text-transform: uppercase;
+  color: @special-grey-2;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+.card__title--dark {
+  color: @basic-black;
+  text-align: center;
+}
+
+.card__image-link {
+  display: block;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+.card__parametr {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card__value {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.card__description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card__button {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 0;
+  width: 280px;
+}
+
+.card__button--light {
+  background-color: @basic-grey;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 0;
+  width: 280px;
+  color: @special-dark-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: @special-grey-2;
+  }
+}
