@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="lead-header">
@@ -18,17 +19,17 @@
         <div class="lead-navigation__wrapper">
           <ul class="lead-navigation__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a class="site-list__link">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -42,24 +43,24 @@
         <header class="solutions__header">
           <h1 class="solutions__title">Функциональное питание для котов</h1>
           <p class="solutions__motto">Занялся собой? Займись котом!</p>
+        </header>
+        <div class="solutions__wrapper">
           <a
             class="solutions__button button"
             href="form.html"
           >
             Подобрать программу
           </a>
-        </header>
-        <div class="solutions__wrapper">
           <ul class="solutions__list">
             <li class="solutions__item solutions__item--less">
-              <h2 class="solutions__subject">Похудение</h2>
+              <h2 class="solutions__subject solutions__subject--less">Похудение</h2>
               <p class="solutions__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="solutions__link" href="catalog.html">каталог slim</a>
             </li>
             <li class="solutions__item solutions__item--more">
-              <h2 class="solutions__subject">Набор массы</h2>
+              <h2 class="solutions__subject solutions__subject--more">Набор массы</h2>
               <p class="solutions__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="solutions__link" href="catalog.html">каталог pro</a>
+              <a class="solutions__link solutions__link--more" href="catalog.html">каталог pro</a>
             </li>
           </ul>
         </div>
@@ -87,37 +88,48 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <dl class="example__list">
+          <!--<dl class="example__list">-->
+          <div class="example__list">
             <div class="example__item">
+              <!--
               <dt class="example__number">
                 5 кг
               </dt>
               <dd class="example__description">
                 снижение веса
               </dd>
+              -->
+              <span class="example__number">
+                5 кг
+              </span>
+              <span class="example__description">
+                снижение <br> веса
+              </span>
+
             </div>
             <div class="example__item">
-              <dt class="example__number">
+              <span class="example__number">
                 60 дней
-              </dt>
-              <dd class="example__description">
+              </span>
+              <span class="example__description">
                 затрачено времени
-              </dd>
+              </span>
             </div>
-          </dl>
+          <!--</dl>-->
+          </div>
           <span class="example__charge">Затраты на питание:
             <span class="example__price">15 000</span> руб.
           </span>
-        </div>
-        <div class="cat-slider">
-          <div class="cat-slider__picture">
-            <img class="cat-slider__fat cat-fat" src="img/cat-fat-phone.jpg" width="250" height="232" alt="Красивый толстый кот.">
+          <div class="cat-slider">
+            <div class="cat-slider__picture">
+              <img class="cat-slider__fat cat-fat" src="img/cat-fat-phone.png" width="280" height="232" alt="Красивый толстый кот.">
 
-          </div>
-          <div class="cat-slider__range-bar">
-            <span>Было</span>
-              <input class="cat-slider__range range-small" type="range" min="0" max="100" value="50">
-            <span>Стало</span>
+            </div>
+            <div class="cat-slider__range-bar">
+              <span>Было</span>
+                <input class="cat-slider__range range-small" type="range" min="0" max="100" value="50">
+              <span>Стало</span>
+            </div>
           </div>
         </div>
       </article>
