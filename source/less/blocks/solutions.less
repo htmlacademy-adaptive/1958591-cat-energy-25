@@ -1,16 +1,39 @@
 .solutions__header {
   padding-top: 27px;
-  padding-bottom: 164px;
+  padding-bottom: 20px;
+  width: @mobile-width;
   background-color: @basic-green;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-phone.jpg");
-  background-size: 100%;
-  background-position: center;
+  background-image: url("../img/can-phone.png"), linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, @basic-white 60%), url("../img/cat-background-phone.jpg");
+  background-size: auto 100% 100%;
+  background-position: 0 167px, center top, center top;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding-top: 15px;
+    padding-bottom: 450px;
+    background-color: @basic-white;
+    background-image: url("../img/can-desktop.png");
+    background-size: auto;
+    background-position: 100px 210px;
+    background-repeat: no-repeat;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding-top: 0;
+    padding-bottom: 20px;
+    background-color: @basic-white;
+    background-image: url("../img/can-desktop.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop.jpg");
+    background-size: auto, 100%, 50%;
+    background-position: 558px 140px, center top, right top;
+    background-repeat: no-repeat;
+  }
 }
 
 .solutions__title {
   margin: 0;
-
   font-family: inherit;
   font-size: 36px;
   line-height: 36px;
@@ -18,6 +41,23 @@
   color: @basic-white;
   text-align: center;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: @basic-black;
+    text-align: left;
+    width: 414px;
+    margin-bottom: 40px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 223px;
+    padding-left: 190px;
+    width: 414px;
+  }
 }
 
 .solutions__motto {
@@ -29,68 +69,185 @@
   color: @basic-white;
   text-align: center;
   text-transform: uppercase;
-}
 
-.solutions__wrapper {
-  padding: 0 @padding-site;
-  padding-top: 138px;
-  background-color: @basic-white;
+  margin-bottom: 302px;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 120px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 190px;
+    margin-bottom: 52px;
+  }
 }
 
 .solutions__button {
-  position: relative;
+
   display: block;
   box-sizing: border-box;
   padding: 8px 0;
+  margin: 0 20px;
   width: 280px;
 
-  &::before {
-    content: url("../img/can-phone.png");
-    position: absolute;
-    top: -270px;
-    left: 0%;
+  @media (min-width: @tablet-width) {
+    padding: 14px 0;
+    width: 244px;
+    margin: 0 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 190px;
+    margin-bottom: 185px;
+  }
+}
+
+.solutions__wrapper {
+  padding: 0 @mobile-padding;
+  width: @mobile-width - (@mobile-padding * 2);
+
+  @media (min-width: @tablet-width) {
+    padding: 0 @tablet-padding;
+    width: @tablet-width - (@tablet-padding * 2);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 @desktop-padding;
+    width: @desktop-width - (@desktop-padding * 2);
   }
 }
 
 .solutions__list {
   .list-style;
-  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    @width-site: @desktop-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .solutions__item {
+  width: @mobile-width - (@mobile-padding * 2);
   position: relative;
+  display: block;
+  box-sizing: border-box;
   background-color: @basic-grey;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 0 20px;
   padding-top: 30px;
+  padding-bottom: 18px;
+
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &::after {
+  *&::after {
     position: absolute;
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - (@tablet-padding * 2);
+    padding: 52px;
+
+    padding-top: 77px;
+    padding-bottom: 57px;
+    margin-bottom: 30px;
+
+
+    &::after {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-top: 77px;
+    padding-bottom: 59px;
+    padding-left: 52px;
+    width: 570px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 80px;
+    }
+
+    &::after {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
+
 
 .solutions__item--less {
   &::after {
-    content: url("../img/cat_back.png");
+    content: url("../img/cat-slim-phone.svg");
     top: 21px;
     left: 22px;
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/cat-slim-tablet.svg");
+      top: 81px;
+      left: 446px;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: url("../img/cat-slim-desktop.svg");
+      top: 47px;
+      left: 52px;
+    }
   }
 }
+
 
 .solutions__item--more {
   &::after {
-    content: url("../img/cat_back2.png");
+    content: url("../img/cat-pro-phone.svg");
     top: 24px;
     left: 13px;
+
+
+    @media (min-width: @tablet-width) {
+      /*
+      content: "";
+      background-color: red;
+      background-size: 200px 200px;
+      border-radius: 50%;
+      background-image: url("../img/cat-pro-phone.svg");
+      background-position: center;*/
+      content: url("../img/cat-pro-tablet.svg");
+      top: 91px;
+      left: 412px;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: url("../img/cat-pro-desktop.svg");
+      top: 47px;
+      left: 52px;
+    }
   }
 }
 
+
 .solutions__subject {
   margin: 0;
+  padding: 0;
+
+  display: block;
+  box-sizing: border-box;
+
   margin-bottom: 30px;
   padding-left: 91px;
   font-family: inherit;
@@ -100,17 +257,48 @@
   color: @basic-black;
   text-align: left;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+    padding-left: 53px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+  }
 }
 
 .solutions__description {
   margin: 0;
+  padding: 0;
   margin-bottom: 38px;
+  width: 227px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: @special-dark-grey;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+    width: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 467px;
+  }
 }
 
 .solutions__link {
@@ -128,5 +316,13 @@
 
   &:active {
     opacity: 30%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 4px 0;
+    padding-right: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
   }
 }

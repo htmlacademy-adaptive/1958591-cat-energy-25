@@ -13,24 +13,24 @@
         <svg class="logo__label" width="101" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#111"><path d="M1.26 16.54A6.87 6.87 0 0 1 0 12.24v-6.4a6.95 6.95 0 0 1 1.19-4.38C2.06.46 3.39 0 5.37 0S8.61.46 9.4 1.3a5.42 5.42 0 0 1 1.19 3.78V6.6H6.72V4.86a3.7 3.7 0 0 0-.24-1.54 1.12 1.12 0 0 0-.46-.48 1.16 1.16 0 0 0-.65-.14c-.55 0-.94.16-1.1.54a4.85 4.85 0 0 0-.24 1.7v8.22a3.11 3.11 0 0 0 .32 1.62c.15.38.55.54 1.1.54s.87-.16 1.03-.54a4.4 4.4 0 0 0 .24-1.62v-1.84h3.87v1.54a5.78 5.78 0 0 1-1.19 3.84c-.79.92-2.13 1.39-4.03 1.39-1.9-.08-3.32-.54-4.1-1.54Zm14-16.31h4.5l3.32 17.54h-3.64l-.63-3.7H16.2l-.63 3.7h-3.72L15.25.23Zm3.23 11.54-.94-6.85-.95 6.85h1.9Zm7.35-8.62h-2.68V.23h9.4v2.85h-2.69v14.69h-4.03V3.15ZM39.75.23h6.96v1.85h-4.5v5.77h3.63V9.6H42.2v6.47h4.5v1.77h-7.03V.23h.08Zm9.01 0h1.74l5.14 11.62V.23h2.05v17.54h-1.58l-5.21-12v12h-2.14V.23Zm11.3 0h6.96v1.85h-4.5v5.77h3.63V9.6H62.5v6.47h4.5v1.77h-6.95V.23Zm9.01 0h3.64a6.45 6.45 0 0 1 4.03 1.08C77.6 2 78 3.23 78 4.85c0 2.23-.7 3.61-2.21 4.07l2.53 8.77h-2.45L73.5 9.46h-1.98v8.23H69V.23h.08Zm3.48 7.54a3.52 3.52 0 0 0 2.3-.62c.47-.38.7-1.15.7-2.3a4.85 4.85 0 0 0-.23-1.7 1.98 1.98 0 0 0-.87-.92 3.69 3.69 0 0 0-1.74-.3h-1.1v5.76h.94v.08Zm8.61 8.7a7.61 7.61 0 0 1-1.1-4.47V6.15a12.26 12.26 0 0 1 .4-3.3 3.92 3.92 0 0 1 1.5-2c.88-.51 1.9-.75 2.92-.7 1.66 0 2.84.39 3.56 1.23a5.77 5.77 0 0 1 1.1 3.85v.62h-2.37V5.3a11.03 11.03 0 0 0-.16-1.92 1.53 1.53 0 0 0-.63-1 2.5 2.5 0 0 0-1.5-.39 2.42 2.42 0 0 0-1.58.46c-.19.15-.34.34-.45.55a1.7 1.7 0 0 0-.18.68 14.01 14.01 0 0 0-.16 2.08v6.54a6.82 6.82 0 0 0 .47 2.92c.32.62.95.85 1.9.85.37.04.75-.02 1.09-.19.34-.16.62-.42.8-.74a6.9 6.9 0 0 0 .56-3.07v-1.23h-2.3V9.08h4.59v8.69h-1.58l-.24-2a3.14 3.14 0 0 1-1.22 1.66 3.29 3.29 0 0 1-2.02.57 4.05 4.05 0 0 1-1.9-.35 3.93 3.93 0 0 1-1.5-1.19Zm13.52-4.85L90.8.3h2.38l2.76 8.46L98.63.3H101l-3.87 11.3v6.16h-2.37V11.6h-.08Z"/></g><defs><clipPath id="a2"><path fill="#fff" d="M0 0h101v18H0z"/></clipPath></defs></svg>
         <span class="visually-hidden">Логотип магазина «Кэт Энерджи»</span>
       </a>
-      <nav class="lead-header__navigation lead-navigation">
+      <nav class="lead-header__navigation lead-navigation lead-navigation--closed">
         <button class="lead-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="lead-navigation__wrapper">
           <ul class="lead-navigation__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--dark" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link site-list__link--dark" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link">
+            <li class="site-list__item site-list__item--dark">
+              <a class="site-list__link site-list__link--dark">
                 Подбор программы
               </a>
             </li>
@@ -242,5 +242,6 @@
         </div>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
