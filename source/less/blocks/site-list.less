@@ -1,13 +1,45 @@
 .site-list {
-  width: 100%;
   .list-style;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 440px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
 }
 
 .site-list__item {
   text-align: center;
+  display: block;
+  box-sizing: border-box;
+  border-top: 1px solid @addition-border;
+
+  &:last-child {
+    border-bottom: 1px solid @addition-border;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
 .site-list__link {
+  display: block;
+  box-sizing: border-box;
+
   font-family: inherit;
   font-size: 20px;
   line-height: 20px;
@@ -17,14 +49,78 @@
   text-transform: uppercase;
   outline: none;
   color: @basic-black;
-
+  padding: 23px 0;
   background-color: @basic-white;
 
   &:hover {
-    opacity: 60%;
+    color: fade(@basic-black, 60%);
   }
 
   &:active {
-    opacity: 30%;
+    color: fade(@basic-black, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    padding: 8px 0;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 400;
+    text-align: left;
+    padding: 8px 0;
+    align-items: center;
+    color: @basic-white;
+    background-color: transparent;
+
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+
+    &:hover {
+      color: fade(@basic-white, 60%);
+    }
+
+    &:active {
+      color: fade(@basic-white, 30%);
+    }
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @basic-white;
+  }
+}
+
+.site-list__item--dark {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic-green;
+  }
+}
+
+.site-list__link--dark {
+  color: @basic-black;
+
+  &:hover {
+    color: fade(@basic-black, 60%);
+  }
+
+  &:active {
+    color: fade(@basic-black, 30%);
   }
 }

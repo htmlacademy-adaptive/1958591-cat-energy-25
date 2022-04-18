@@ -1,9 +1,26 @@
 .lead-header {
-  padding: 0 @padding-site;
+  width: @mobile-width;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - (@tablet-padding * 2);
+    padding: 0 @tablet-padding;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 @desktop-padding;
+    width: @desktop-width - (@desktop-padding * 2);
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .lead-header__logo {
-  margin: 0 auto;
+  margin: 0;
 
   &:hover {
     opacity: 80%;
@@ -11,5 +28,13 @@
 
   &:active {
     opacity: 60%;
+  }
+}
+
+.lead-header--index {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }

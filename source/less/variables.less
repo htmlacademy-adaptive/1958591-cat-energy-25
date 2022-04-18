@@ -8,17 +8,31 @@
 @basic-white: #ffffff;
 @basic-black: #000000;
 @basic-border: #e7e7e7;
+@addition-border: #e6e6e6;
+@light-border: #d9d9d9;
 @status-error: #ff8282;
 
 @mobile-width: 320px;
+@mobile-width-only: 767px;
 @tablet-width: 768px;
 @desktop-width: 1440px;
+/*1440*/
 @width-site: @mobile-width;
+
+@media (min-width: @tablet-width) {
+  @width-site: @tablet-width;
+}
+
+@media (min-width: @desktop-width) {
+  @width-site: @desktop-width;
+}
 
 @mobile-padding: 20px;
 @tablet-padding: 30px;
 @desktop-padding: 110px;
 @padding-site: @mobile-padding;
+
+@desktop-grid: (@desktop-width - (@desktop-padding * 2)) / 4;
 
 .list-style() {
   margin: 0;
