@@ -1,4 +1,5 @@
 .lead-header {
+  margin: 0 auto;
   width: @mobile-width;
   padding: 0 0;
   display: flex;
@@ -6,6 +7,7 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width - (@tablet-padding * 2);
+    /*width: 92%;*/
     padding: 0 @tablet-padding;
     flex-direction: row;
     justify-content: space-between;
@@ -14,6 +16,7 @@
   @media (min-width: @desktop-width) {
     padding: 0 @desktop-padding;
     width: @desktop-width - (@desktop-padding * 2);
+    /*width: 84%;*/
     flex-direction: row;
     justify-content: space-between;
   }
@@ -33,8 +36,6 @@
 
 .lead-header--index {
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: 0;
-    top: 0;
+    z-index: 10;
   }
 }

@@ -1,40 +1,42 @@
 .card {
-  padding: 20px @padding-site;
+
+  padding: 0 @mobile-padding;
   padding-bottom: 25px;
-  border-top: 1px solid @special-grey-2;
+  border-bottom: 1px solid @catalog-border;
+  margin: 0 auto;
+  width: @mobile-width - @mobile-padding * 2;
 
-  &:last-child {
-    border-bottom: 1px solid @special-grey-2;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    padding: 0 0;
+    padding-top: 161px;
+    padding-bottom: 38px;
+    &:not(:last-child) {
+      background-color: @basic-grey;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
   }
 }
 
-.card__title-link {
-  text-decoration: none;
-}
+.card__container {
+  padding: 12px 0;
 
-.card__title {
-  margin: 0;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-align: left;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  justify-items: center;
+  align-items: center;
 
-  text-transform: uppercase;
-  color: @special-dark-grey-2;
+  @media (min-width: @tablet-width) {
 
-  &:hover {
-    opacity: 80%;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
   }
-
-  &:active {
-    opacity: 60%;
-  }
-}
-
-.card__title--dark {
-  color: @basic-black;
-  text-align: center;
 }
 
 .card__image-link {
@@ -47,22 +49,149 @@
   &:active {
     opacity: 60%;
   }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    bottom: 191px;
+
+    &:nth-child(1n) {
+      left: 82px;
+    }
+
+    &:nth-child(2n) {
+      left: 78px;
+    }
+  }
+}
+
+.card__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.card__title-link {
+
+  text-decoration: none;
+}
+
+.card__title {
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: @special-dark-grey-2;
+  width: 76px;
+  margin-bottom: 18px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 160px;
+    margin-bottom: 21px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 145px;
+  }
+}
+
+.card__title--dark {
+  position: relative;
+  color: @basic-black;
+  text-align: center;
+  width: auto;
+  padding-top: 78px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: @basic-button;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
+}
+
+.card__list {
+  margin: 0 auto;
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 33px;
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 33px;
+    width: 168px;
+  }
+
+}
+
+.card__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 0;
+
+    border-bottom: 1px solid @special-grey;
+  }
+
 }
 
 .card__parametr {
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  text-align: center;
+  width: 60px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    width: 100px;
+    text-align: left;
+  }
 }
 
 .card__value {
+  margin: 0;
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  text-align: center;
+  width: 75px;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    width: 100px;
+  }
 }
 
 .card__description {
@@ -78,6 +207,18 @@
   box-sizing: border-box;
   padding: 8px 0;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 38px;
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+
 }
 
 .card__button--light {
@@ -96,4 +237,29 @@
     background-color: #ebebeb;
     color: @special-grey-2;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 38px;
+    width: 248px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}
+
+
+.card__description {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
 }

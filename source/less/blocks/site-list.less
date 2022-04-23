@@ -13,7 +13,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 480px;
+    width: 483px;
   }
 }
 
@@ -81,6 +81,7 @@
     padding: 8px 0;
     align-items: center;
     color: @basic-white;
+
     background-color: transparent;
 
     &:not(:last-child) {
@@ -110,8 +111,24 @@
 .site-list__item--dark {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @basic-green;
+
+    &:last-child {
+      border-bottom: 2px solid @basic-green;
+    }
+  }
+
+  /*Блок для отладки, чтобы видеть точно 1440 */
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @basic-green;
+
+    &:last-child {
+      border-bottom: 2px solid red;
+    }
   }
 }
+
+
+
 
 .site-list__link--dark {
   color: @basic-black;

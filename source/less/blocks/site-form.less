@@ -1,7 +1,15 @@
 .site-form {
-  padding: 0 @padding-site;
   background-color: @basic-white;
   color: @basic-black;
+  padding: 20px @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px @tablet-padding;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 20px @desktop-padding;
+  }
 }
 
 .site-form__title {
@@ -13,6 +21,12 @@
   font-weight: 400;
   text-align: left;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
 }
 
 .site-form__description {
@@ -26,6 +40,12 @@
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
 }
 
 .site-form__button {

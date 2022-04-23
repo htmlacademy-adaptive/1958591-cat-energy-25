@@ -1,11 +1,25 @@
 .addition-card {
-  padding: 20px @padding-site;
-  padding-bottom: 25px;
+  padding-bottom: 19px;
+  padding-top: 13px;
+
   border-top: 1px solid @special-grey-2;
 
   &:last-child {
     border-bottom: 1px solid @special-grey-2;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+
 }
 
 .addition-card__link {
@@ -13,7 +27,8 @@
 }
 
 .addition-card__title {
-  padding: 0 @padding-site;
+  margin: 0;
+  margin-bottom: 13px;
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
@@ -30,6 +45,48 @@
   &:active {
     opacity: 60%;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 324px;
+  }
+
+}
+
+.addition-card__stuff {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+
+
+
+}
+
+.addition-card__detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 288px;
+    justify-content: start;
+  }
+
 }
 
 .addition-card__description {
@@ -37,7 +94,22 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 188px;
+    text-align: right;
+    margin-right: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 188px;
+    text-align: left;
+  }
+
 }
 
 .addition-card__price {
@@ -45,5 +117,29 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  text-align: center;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100px;
+  }
+
+}
+
+.addition-card__button {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 0;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
 }

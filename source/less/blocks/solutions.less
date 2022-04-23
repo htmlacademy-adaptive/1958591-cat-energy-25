@@ -1,3 +1,7 @@
+.solution {
+  margin: 0 auto;
+}
+
 .solutions__header {
   padding-top: 27px;
   padding-bottom: 20px;
@@ -22,8 +26,10 @@
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
+    position: relative;
+    top: -185px;
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: @basic-white;
     background-image: url("../img/can-desktop.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop.jpg");
     background-size: auto, 100%, 50%;
@@ -108,6 +114,7 @@
 }
 
 .solutions__wrapper {
+
   padding: 0 @mobile-padding;
   width: @mobile-width - (@mobile-padding * 2);
 
@@ -117,6 +124,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: -185px;
     padding: 0 @desktop-padding;
     width: @desktop-width - (@desktop-padding * 2);
   }
@@ -152,7 +160,7 @@
     margin-bottom: 0;
   }
 
-  *&::after {
+  &::after {
     position: absolute;
     display: block;
   }
