@@ -1,34 +1,25 @@
 .page {
   height: 100%;
   background-color: @basic-white;
+  margin: 0 auto;
 }
 
 /*page__body*/
 
 .page__body {
   min-height: 100%;
-  width: @width-site;
   margin: 0 auto;
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   color: @basic-black;
-
   background-color: @basic-white;
-
-  @media (min-width: @tablet-width) {
-    @width-site: @tablet-width;
-    width: @width-site;
-  }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    @width-site: @desktop-width;
-    width: @width-site;
   }
 }

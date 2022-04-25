@@ -1,9 +1,13 @@
-.promo {
+/*.promo {
   padding: 35px @padding-site;
   background-color: @basic-white;
-}
+}*/
 
-.promo__wrapper {
+.promo {
+  display: block;
+  box-sizing: border-box;
+  width: @mobile-width - (@mobile-padding * 2);
+  margin: 0 auto;
   padding: 43px 60px;
   padding-top: 187px;
   background-color: @basic-green;
@@ -11,6 +15,18 @@
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - (@tablet-padding * 2);
+    padding-left: 422px;
+    padding-right: 124px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding: 0 42px;
+    padding-top: 184px;
+  }
 }
 
 .promo__title {

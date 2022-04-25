@@ -1,5 +1,29 @@
 .cat-contacts {
+  margin: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.cat-contacts__wrapper {
+  padding: 0 @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 41px + @tablet-padding;
+    padding-right: 37px + @tablet-padding;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .cat-contacts__title {
@@ -8,12 +32,27 @@
   line-height: 26px;
   font-weight: 400;
   text-align: left;
-  text-transform: uppercase;
   color: @basic-black;
+  width: 188px;
+  margin-bottom: 36px;
+  padding-left: @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+    width: 515px;
+    padding-left: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+    padding-left: @desktop-padding;
+  }
 }
 
-
 .cat-contacts__group {
+  position: relative;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -32,4 +71,20 @@
   text-align: left;
   text-transform: uppercase;
   color: @special-dark-grey;
+}
+
+/*
+.cat-contacts__field:focus .cat-contacts_icon path {
+  fill: @basic-green;
+}
+
+.cat-contacts__field:invalid .cat-contacts_icon path {
+  stroke: @status-error;
+}
+*/
+
+.cat-contacts_icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
