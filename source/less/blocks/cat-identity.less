@@ -1,3 +1,19 @@
 .cat-identity {
   border: none;
+  margin: 0;
+  margin-bottom: 24px;
+
+  padding: 20px @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-left: @desktop-padding;
+    margin-right: 80px;
+  }
 }

@@ -79,5 +79,3 @@ function init () {
         .add(myPlacemark2)
         .add(myPlacemark3);
 } */
-
-

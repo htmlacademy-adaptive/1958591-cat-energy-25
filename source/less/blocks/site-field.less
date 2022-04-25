@@ -1,6 +1,36 @@
 .site-field {
   margin: 0;
   padding: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: @mobile-width - (@mobile-padding * 2);
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    width: 630px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 570px;
+  }
+}
+
+.site-field--picture {
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
+  }
 }
 
 .site-field label {
@@ -11,6 +41,15 @@
   text-align: left;
   text-transform: uppercase;
   color: @special-dark-grey;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .site-field input {
@@ -21,9 +60,12 @@
   text-align: left;
   text-transform: uppercase;
   color: @special-dark-grey;
-
+  padding: 13px 0;
+  padding-left: 15px;
   border: none;
   outline: 1px solid @basic-border;
+
+  width: 100%;
 
   &:hover {
     outline: 1px solid @special-grey;
@@ -35,5 +77,12 @@
 
   &:invalid {
     outline: 2px solid @status-error;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+    padding: 11px 0;
+    padding-left: 15px;
   }
 }

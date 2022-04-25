@@ -1,5 +1,7 @@
 .comment {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .comment__title {
@@ -8,8 +10,20 @@
   line-height: 26px;
   font-weight: 400;
   text-align: left;
-  text-transform: uppercase;
   color: @basic-black;
+  margin-bottom: 37px;
+  padding-left: @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: @desktop-padding;
+  }
 }
 
 .comment__group {
@@ -20,6 +34,12 @@
   text-align: left;
   text-transform: uppercase;
   color: @special-dark-grey;
+  padding: 0 @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 41px + @tablet-padding;
+    padding-right: 37px + @tablet-padding;
+  }
 }
 
 
@@ -31,4 +51,18 @@
   text-align: left;
   text-transform: uppercase;
   color: @special-dark-grey;
+  height: 150px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 174px;
+    width: 631px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 174px;
+    width: 1220px;
+  }
 }

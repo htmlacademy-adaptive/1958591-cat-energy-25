@@ -1,5 +1,7 @@
 .additional {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .additional__legend {
@@ -8,15 +10,58 @@
   line-height: 26px;
   font-weight: 400;
   text-align: left;
-  text-transform: uppercase;
   color: @basic-black;
+  margin-bottom: 39px;
+  padding-left: @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 62px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: @desktop-padding;
+  }
 }
 
 .additional__list {
   .list-style;
+
+  padding: 0 @mobile-padding;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 41px + @tablet-padding;
+    padding-right: 37px + @tablet-padding;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.additional__item {
+  @media (min-width: @tablet-width) {
+    width: 310px;
+
+    &:nth-child(1n) {
+      margin-right: 35px;
+      margin-bottom: 42px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
 }
 
 .additional__label {
+  position: relative;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -24,4 +69,70 @@
   text-align: left;
   text-transform: uppercase;
   color: @basic-black;
+  padding-left: 45px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+    padding-left: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 29px;
+    padding-left: 88px;
+    width: 250px;
+  }
+}
+
+.additional__input {
+
+  position: absolute;
+  top: -7px;
+  left: -15px;
+  /*
+  -webkit-appearance: none;
+  -moz-appearance: none;*/
+  appearance: none;
+
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+
+  background-color: @basic-white;
+  border: 1px solid @special-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 15px;
+  }
+
+  &:focus {
+    outline: 2px solid @input-border;
+  }
+
+  &:hover {
+    outline: 1px solid @input-border;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
+}
+
+.additional__input:checked,
+.additional__input:checked:hover,
+.additional__input:checked:focus,
+.additional__input:checked:active,
+.additional__input:checked:disabled {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
