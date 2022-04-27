@@ -1,0 +1,20 @@
+.wrapper {
+  margin: 0 auto;
+  padding-left: @mobile-padding;
+  padding-right: @mobile-padding;
+  width: @mobile-width - (@mobile-padding * 2);
+
+  @media (min-width: @tablet-width) {
+    padding-left: @tablet-padding;
+    padding-right: @tablet-padding;
+    width: @tablet-width - (@tablet-padding * 2);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: @desktop-padding;
+    padding-right: @desktop-padding;
+    width: @desktop-width - (@desktop-padding * 2);
+  }
+
+  overflow: hidden;
+}

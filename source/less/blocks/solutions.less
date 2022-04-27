@@ -1,42 +1,48 @@
-.solution {
-  margin: 0 auto;
+.solutions__header {
+  background-color: @basic-green;
+  background-image: url("../img/can-phone.png"), linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, @basic-white 60%), url("../img/cat-background-phone.jpg");
+  background-size: auto, 100%, contain;
+  background-position: center 75%, center top, center top;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+    background-image: url("../img/can-desktop.png");
+    background-size: auto;
+    background-position: center 90%;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-white;
+    background-image: url("../img/can-desktop.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop.jpg");
+    background-size: auto, 100%, 50%;
+    background-position: 60% 75%, center top, right top;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -185px;
+  }
 }
 
-.solutions__header {
+.solution__container {
   padding-top: 27px;
   padding-bottom: 20px;
   width: @mobile-width;
-  background-color: @basic-green;
-  background-image: url("../img/can-phone.png"), linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, @basic-white 60%), url("../img/cat-background-phone.jpg");
-  background-size: auto 100% 100%;
-  background-position: 0 167px, center top, center top;
-  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     padding-top: 15px;
     padding-bottom: 450px;
-    background-color: @basic-white;
-    background-image: url("../img/can-desktop.png");
-    background-size: auto;
-    background-position: 100px 210px;
-    background-repeat: no-repeat;
-    margin-bottom: 82px;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    position: relative;
-    top: -185px;
     padding-top: 0;
     padding-bottom: 10px;
-    background-color: @basic-white;
-    background-image: url("../img/can-desktop.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop.jpg");
-    background-size: auto, 100%, 50%;
-    background-position: 558px 140px, center top, right top;
-    background-repeat: no-repeat;
+    margin-bottom: 82px;
   }
 }
+
 
 .solutions__title {
   margin: 0;
@@ -114,19 +120,8 @@
 }
 
 .solutions__wrapper {
-
-  padding: 0 @mobile-padding;
-  width: @mobile-width - (@mobile-padding * 2);
-
-  @media (min-width: @tablet-width) {
-    padding: 0 @tablet-padding;
-    width: @tablet-width - (@tablet-padding * 2);
-  }
-
   @media (min-width: @desktop-width) {
     margin-top: -185px;
-    padding: 0 @desktop-padding;
-    width: @desktop-width - (@desktop-padding * 2);
   }
 }
 
@@ -138,7 +133,6 @@
   margin-bottom: 20px;
 
   @media (min-width: @desktop-width) {
-    @width-site: @desktop-width;
     flex-direction: row;
     flex-wrap: wrap;
   }

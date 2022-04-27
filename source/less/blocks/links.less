@@ -1,23 +1,13 @@
 .links {
   background-color: @basic-grey;
-  width: @mobile-width - (@mobile-padding * 2);
-  padding: 0 @mobile-padding;
+}
+
+.links__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - (@tablet-padding * 2);
-    padding: 0 @tablet-padding;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width - (@desktop-padding * 2);
-    padding: 0 @desktop-padding;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
