@@ -6,11 +6,17 @@
   }
 }
 
+.contacts__contain {
+  background-color: @basic-grey;
+}
+
 .contacts__map {
   border: none;
   display: block;
   overflow: hidden;
   min-height: 362px;
+  max-width: 100vw;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     min-height: 400px;
@@ -64,7 +70,7 @@
   }
 }
 
-.contacts__address {
+.contacts-address {
   margin: 0;
   margin-left: auto;
   display: flex;

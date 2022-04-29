@@ -123,10 +123,14 @@
             <div class="cat-slider__picture">
               <img class="cat-slider__fat cat-fat" src="img/cat-fat-phone.png" width="280" height="232" alt="Красивый толстый кот.">
             </div>
-            <div class="cat-slider__range-bar">
-              <span>Было</span>
-                <input class="cat-slider__range range-small" type="range" min="0" max="100" value="50">
-              <span>Стало</span>
+            <div class="cat-slider__range">
+              <button class="cat-slider__before" type="button">Было</button>
+              <div class="cat-slider__bar">
+                <div  class="cat-slider__part"></div>
+              </div>
+                <!--<input class="cat-slider__range range-small" type="range" min="0" max="100" value="50">
+                div  class="cat-slider__part"  style="left: 6px"-->
+              <button class="cat-slider__after" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -137,12 +141,14 @@
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper wrapper">
             <p class="contacts__promo">Приглашаем к сотрудничеству дилеров!</p>
-            <div class="cantacts-address">
+            <div class="contacts-address">
               <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
               <p class="contacts__city">Санкт-Петербург</p>
             </div>
           </div>
-          <div class="contacts__map" id="map"></div>
+          <div class="contacts__contain">
+            <div class="contacts__map" id="map"></div>
+          </div>
         </section>
         <section class="lead-footer__links links">
           <div class="links__wrapper wrapper">
