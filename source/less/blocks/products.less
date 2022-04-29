@@ -18,9 +18,7 @@
   margin: 0;
   display: block;
   box-sizing: border-box;
-  padding: 0 @mobile-padding;
-  padding-top: 27px;
-  padding-bottom: 41px;
+  padding: 27px @mobile-padding 41px;
   border-top: 1px solid @light-border;
   border-bottom: 1px solid @catalog-border;
   font-family: inherit;
@@ -32,16 +30,13 @@
   color: @basic-black;
 
   @media (min-width: @tablet-width) {
-    padding: 0 @tablet-padding;
-    padding-top: 15px;
-    padding-bottom: 90px;
+    padding: 15px @tablet-padding 90px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 0;
+    padding: 3px 0 85px;
     padding-top: 3px;
-    padding-bottom: 85px;
     border: none;
   }
 }

@@ -100,7 +100,6 @@
 }
 
 .solutions__button {
-
   display: block;
   box-sizing: border-box;
   padding: 8px 0;
@@ -126,7 +125,6 @@
 
 .solutions__list {
   .list-style;
-
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -144,10 +142,7 @@
   box-sizing: border-box;
   background-color: @basic-grey;
   margin-bottom: 20px;
-  padding: 0 20px;
-  padding-top: 30px;
-  padding-bottom: 18px;
-
+  padding: 30px 20px 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -160,12 +155,8 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width - (@tablet-padding * 2);
-    padding: 52px;
-
-    padding-top: 77px;
-    padding-bottom: 57px;
+    padding: 77px 52px 57px;
     margin-bottom: 30px;
-
 
     &::after {
       width: 200px;
@@ -175,9 +166,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding-top: 77px;
-    padding-bottom: 59px;
-    padding-left: 52px;
+    padding: 77px 0 59px 52px;
     width: 570px;
 
     &:not(:nth-child(2n)) {
@@ -221,13 +210,6 @@
 
 
     @media (min-width: @tablet-width) {
-      /*
-      content: "";
-      background-color: red;
-      background-size: 200px 200px;
-      border-radius: 50%;
-      background-image: url("../img/cat-pro-phone.svg");
-      background-position: center;*/
       content: url("../img/cat-pro-tablet.svg");
       top: 91px;
       left: 412px;
@@ -294,7 +276,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
@@ -304,8 +285,7 @@
 
 .solutions__link {
   position: relative;
-  padding: 4px 0;
-  padding-right: 49px;
+  padding: 4px 49px 4px 0;
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
@@ -320,8 +300,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 4px 0;
-    padding-right: 60px;
+    padding: 4px 60px 4px 0;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;

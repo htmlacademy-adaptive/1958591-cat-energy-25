@@ -1,18 +1,15 @@
 .wrapper {
   margin: 0 auto;
-  padding-left: @mobile-padding;
-  padding-right: @mobile-padding;
+  padding: 0 @mobile-padding;
   width: @mobile-width - (@mobile-padding * 2);
 
   @media (min-width: @tablet-width) {
-    padding-left: @tablet-padding;
-    padding-right: @tablet-padding;
+    padding: 0 @tablet-padding;
     width: @tablet-width - (@tablet-padding * 2);
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: @desktop-padding;
-    padding-right: @desktop-padding;
+    padding: 0 @desktop-padding;
     width: @desktop-width - (@desktop-padding * 2);
   }
 
