@@ -1,16 +1,14 @@
 .products {
-  margin: 0 auto;
   background-color: @basic-white;
   color: @special-dark-grey;
-  width: @mobile-width;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+    margin-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width - @desktop-padding *2;
-    padding: 0 @desktop-padding;
+    margin-bottom: 75px;
   }
 }
 
@@ -18,7 +16,7 @@
   margin: 0;
   display: block;
   box-sizing: border-box;
-  padding: 27px @mobile-padding 41px;
+  padding: 27px 0 41px;
   border-top: 1px solid @light-border;
   border-bottom: 1px solid @catalog-border;
   font-family: inherit;
@@ -30,13 +28,16 @@
   color: @basic-black;
 
   @media (min-width: @tablet-width) {
-    padding: 15px @tablet-padding 90px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
     border: none;
+    margin-bottom: 165px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 3px 0 85px;
-    padding-top: 3px;
+    font-size: 60px;
+    line-height: 60px;
     border: none;
   }
 }
@@ -45,7 +46,6 @@
   .list-style;
 
   @media (min-width: @tablet-width) {
-    padding: 0 @tablet-padding;
     display: grid;
     grid-template-columns: 324px 324px;
     column-gap: 60px;
@@ -53,10 +53,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 0;
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 143px;
   }
 }

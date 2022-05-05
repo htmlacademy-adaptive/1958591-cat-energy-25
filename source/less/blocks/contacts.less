@@ -6,6 +6,15 @@
   }
 }
 
+.contacts--dark {
+  background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    background-color: @basic-white;
+  }
+}
+
 .contacts__contain {
   background-color: @basic-grey;
 }
@@ -13,7 +22,6 @@
 .contacts__map {
   border: none;
   display: block;
-  overflow: hidden;
   min-height: 362px;
   max-width: 100vw;
   padding: 0;

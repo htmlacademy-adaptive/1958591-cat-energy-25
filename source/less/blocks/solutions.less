@@ -1,16 +1,25 @@
 .solutions__header {
   background-color: @basic-green;
   background-image: url("../img/can-phone.png"), linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, @basic-white 60%), url("../img/cat-background-phone.jpg");
-  background-size: auto, 100%, contain;
+  background-size: auto, 100%, 320px 302px;
   background-position: center 75%, center top, center top;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/can-phone@2x.png"), linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, @basic-white 60%), url("../img/cat-background-phone@2x.jpg");
+    background-size: 280px 270px, 100%, 320px 302px;
+  }
+
   @media (min-width: @tablet-width) {
     background-color: @basic-white;
-    background-image: url("../img/can-desktop.png");
+    background-image: url("../img/can-tablet.png");
     background-size: auto;
     background-position: center 90%;
-    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/can-tablet@2x.jpg");
+      background-size: 709px 609px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -18,25 +27,26 @@
     background-image: url("../img/can-desktop.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop.jpg");
     background-size: auto, 100%, 50%;
     background-position: 60% 75%, center top, right top;
-    background-repeat: no-repeat;
     position: relative;
     top: -185px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/can-desktop@2x.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop@2x.jpg");
+      background-size: 552px 499px, 100%, 50%;
+    }
   }
 }
 
 .solution__container {
   padding-top: 27px;
   padding-bottom: 20px;
-  /*width: @mobile-width;*/
 
   @media (min-width: @tablet-width) {
-    /*width: @tablet-width;*/
     padding-top: 15px;
     padding-bottom: 450px;
   }
 
   @media (min-width: @desktop-width) {
-    /*width: @desktop-width;*/
     padding-top: 0;
     padding-bottom: 10px;
     margin-bottom: 82px;
