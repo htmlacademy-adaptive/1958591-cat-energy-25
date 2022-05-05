@@ -1,25 +1,18 @@
 .site-field {
   margin: 0;
   padding: 0;
-
-  &:not(:last-child) {
-    margin-bottom: 14px;
-  }
-
+  margin-bottom: 14px;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: @mobile-width - (@mobile-padding * 2);
 
   @media (min-width: @tablet-width) {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-
     width: 630px;
+    margin-bottom: 20px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 570px;
   }
 }
@@ -27,7 +20,6 @@
 .site-field--picture {
   @media (min-width: @desktop-width) {
     &:not(:last-child) {
-      margin-bottom: 0;
       margin-right: 80px;
     }
   }

@@ -1,28 +1,34 @@
 .example {
-  background-color: #eaeaea;
+  background-color: @backgound-slider;
   color: @basic-black;
-  width: @mobile-width - (@mobile-padding * 2);
-
-  padding: 25px @mobile-padding;
-  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - (@tablet-padding * 2);
-    padding: 43px @tablet-padding;
     background-image: linear-gradient(to bottom, @basic-white 70%, @basic-grey 70%);
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width - (@desktop-padding * 2);
-    padding: 70px @desktop-padding;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-image: linear-gradient(to bottom, @basic-white 30%, @basic-grey 30%);
   }
 }
 
 .example__wrapper {
+  padding-bottom: 40px;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 43px;
+    padding-top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.example__content {
   @media (min-width: @desktop-width) {
     width: 546px;
   }
@@ -192,4 +198,8 @@
     width: 162px;
     text-align: center;
   }
+}
+
+.example__slider {
+  margin-left: auto;
 }

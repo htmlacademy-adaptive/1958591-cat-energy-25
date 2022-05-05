@@ -1,0 +1,27 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 @mobile-padding;
+  max-width: @mobile-width - (@mobile-padding * 2);
+
+  @media (min-width: @tablet-width) {
+    padding: 0 @tablet-padding;
+    max-width: @tablet-width - (@tablet-padding * 2);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 @desktop-padding;
+    max-width: @desktop-width - (@desktop-padding * 2);
+  }
+
+  overflow: hidden;
+}
+
+.wrapper--form {
+  @media (min-width: @tablet-width) {
+    padding-left: @tablet-padding + 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: @desktop-padding;
+  }
+}

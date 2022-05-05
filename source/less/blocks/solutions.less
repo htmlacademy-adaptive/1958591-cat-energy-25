@@ -1,42 +1,58 @@
-.solution {
-  margin: 0 auto;
-}
-
 .solutions__header {
-  padding-top: 27px;
-  padding-bottom: 20px;
-  width: @mobile-width;
   background-color: @basic-green;
   background-image: url("../img/can-phone.png"), linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, @basic-white 60%), url("../img/cat-background-phone.jpg");
-  background-size: auto 100% 100%;
-  background-position: 0 167px, center top, center top;
+  background-size: auto, 100%, 320px 302px;
+  background-position: center 75%, center top, center top;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/can-phone@2x.png"), linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, @basic-white 60%), url("../img/cat-background-phone@2x.jpg");
+    background-size: 280px 270px, 100%, 320px 302px;
+  }
+
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
-    padding-top: 15px;
-    padding-bottom: 450px;
     background-color: @basic-white;
-    background-image: url("../img/can-desktop.png");
+    background-image: url("../img/can-tablet.png");
     background-size: auto;
-    background-position: 100px 210px;
-    background-repeat: no-repeat;
-    margin-bottom: 82px;
+    background-position: center 90%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/can-tablet@2x.jpg");
+      background-size: 709px 609px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
-    position: relative;
-    top: -185px;
-    padding-top: 0;
-    padding-bottom: 10px;
     background-color: @basic-white;
     background-image: url("../img/can-desktop.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop.jpg");
     background-size: auto, 100%, 50%;
-    background-position: 558px 140px, center top, right top;
-    background-repeat: no-repeat;
+    background-position: 60% 75%, center top, right top;
+    position: relative;
+    top: -185px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/can-desktop@2x.png"), linear-gradient(to right, @basic-white 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/cat-background-desktop@2x.jpg");
+      background-size: 552px 499px, 100%, 50%;
+    }
   }
 }
+
+.solution__container {
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 450px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 82px;
+  }
+}
+
 
 .solutions__title {
   margin: 0;
@@ -94,11 +110,9 @@
 }
 
 .solutions__button {
-
   display: block;
   box-sizing: border-box;
   padding: 8px 0;
-  margin: 0 20px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
@@ -114,31 +128,18 @@
 }
 
 .solutions__wrapper {
-
-  padding: 0 @mobile-padding;
-  width: @mobile-width - (@mobile-padding * 2);
-
-  @media (min-width: @tablet-width) {
-    padding: 0 @tablet-padding;
-    width: @tablet-width - (@tablet-padding * 2);
-  }
-
   @media (min-width: @desktop-width) {
     margin-top: -185px;
-    padding: 0 @desktop-padding;
-    width: @desktop-width - (@desktop-padding * 2);
   }
 }
 
 .solutions__list {
   .list-style;
-
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 
   @media (min-width: @desktop-width) {
-    @width-site: @desktop-width;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -151,10 +152,7 @@
   box-sizing: border-box;
   background-color: @basic-grey;
   margin-bottom: 20px;
-  padding: 0 20px;
-  padding-top: 30px;
-  padding-bottom: 18px;
-
+  padding: 30px 20px 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -167,12 +165,8 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width - (@tablet-padding * 2);
-    padding: 52px;
-
-    padding-top: 77px;
-    padding-bottom: 57px;
+    padding: 77px 52px 57px;
     margin-bottom: 30px;
-
 
     &::after {
       width: 200px;
@@ -182,9 +176,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding-top: 77px;
-    padding-bottom: 59px;
-    padding-left: 52px;
+    padding: 77px 0 59px 52px;
     width: 570px;
 
     &:not(:nth-child(2n)) {
@@ -228,13 +220,6 @@
 
 
     @media (min-width: @tablet-width) {
-      /*
-      content: "";
-      background-color: red;
-      background-size: 200px 200px;
-      border-radius: 50%;
-      background-image: url("../img/cat-pro-phone.svg");
-      background-position: center;*/
       content: url("../img/cat-pro-tablet.svg");
       top: 91px;
       left: 412px;
@@ -301,7 +286,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
@@ -311,8 +295,7 @@
 
 .solutions__link {
   position: relative;
-  padding: 4px 0;
-  padding-right: 49px;
+  padding: 4px 49px 4px 0;
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
@@ -327,10 +310,31 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 4px 0;
-    padding-right: 60px;
+    padding: 4px 60px 4px 0;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 10px;
+    background-image: url("../img/icon_arrow.svg");
+    background-position: right;
+    top: 15px;
+    left: 130px;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 10px;
+    top: 15px;
+    left: 130px;
   }
 }
