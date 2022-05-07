@@ -18,9 +18,22 @@
 }
 
 .site-field--picture {
+  margin-bottom: 1px;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     &:not(:last-child) {
       margin-right: 80px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -75,6 +88,6 @@
     font-size: 20px;
     line-height: 29px;
     padding: 11px 0;
-    padding-left: 15px;
+    padding-left: 25px;
   }
 }

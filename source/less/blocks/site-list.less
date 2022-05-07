@@ -9,7 +9,7 @@
     width: 440px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,9 +29,11 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    margin-right: 34px;
 
     &:last-child {
       border-bottom: none;
+      margin-right: 0;
     }
   }
 }
