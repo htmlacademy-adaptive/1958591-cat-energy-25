@@ -1,3 +1,9 @@
+let ContactsMap = document.querySelector('.contacts__map');
+
+if (ContactsMap.classList.contains('contacts__map--nojs')) {
+  ContactsMap.classList.remove('contacts__map--nojs');
+}
+
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
     center: [59.93888, 30.32313],

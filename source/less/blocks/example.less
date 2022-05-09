@@ -103,30 +103,29 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     width: 366px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 54px;
+    margin-bottom: 40px;
   }
 }
 
 .example__item {
   position: relative;
   margin: 0;
-  padding: 0;
+  margin-bottom: 14px;
+  padding: 14px 0 18px 0;
   display: block;
   box-sizing: border-box;
   border: 1px solid @special-grey;
   border-radius: 3px;
   width: 124px;
-  padding-top: 14px;
-  padding-bottom: 18px;
 
-  &:not(:last-child) {
+  &:nth-child(odd) {
     margin-right: 32px;
   }
 

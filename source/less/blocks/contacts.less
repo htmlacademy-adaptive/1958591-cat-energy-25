@@ -35,6 +35,36 @@
   }
 }
 
+
+.contacts__map--nojs {
+  background-color: @basic-grey;
+  background-image: url("../img/location.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/location-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/location-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.jpg");
+    }
+  }
+}
+
+
 .contacts__wrapper {
   display: flex;
   flex-direction: row;
