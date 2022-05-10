@@ -9,6 +9,10 @@
     &:not(:last-child) {
       background-color: @basic-grey;
     }
+
+    &:last-child {
+      border: 1px solid @catalog-border;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -17,7 +21,8 @@
 }
 
 .card__container {
-  padding: 12px 0;
+  padding: 18px 0 13px 0;
+  margin-bottom: 11px;
   display: grid;
   grid-template-columns: 140px 140px;
   justify-items: center;
@@ -32,6 +37,9 @@
 
 .card__image-link {
   display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  padding-bottom: 0;
 
   &:hover {
     opacity: 80%;
@@ -49,6 +57,7 @@
 .card__image {
   display: block;
   margin: 0 auto;
+  margin-top: auto;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -67,7 +76,7 @@
     width: 160px;
     height: 172px;
     left: 43px;
-    bottom: 25px;
+    bottom: 43px;
   }
 }
 
@@ -83,7 +92,7 @@
     width: 172px;
     height: 198px;
     left: 39px;
-    bottom: 25px;
+    bottom: 43px;
   }
 }
 
@@ -92,7 +101,7 @@
 }
 
 .card__title {
-  margin: 0 auto;
+  margin: 0;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -101,7 +110,7 @@
   text-transform: uppercase;
   color: @special-dark-grey-2;
   width: 76px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 
   &:hover {
     opacity: 80%;
@@ -115,14 +124,16 @@
     font-size: 20px;
     line-height: 24px;
     width: 160px;
-    margin-bottom: 21px;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 12px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 21px;
     width: 145px;
+    margin-bottom: 18px;
   }
 }
 
@@ -132,19 +143,28 @@
   text-align: center;
   width: auto;
   padding-top: 78px;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    width: 135px;
+    margin-bottom: 20px;
+  }
 
   &::before,
   &::after {
     content: "";
     position: absolute;
     top: 39px;
-    right: 50%;
+    left: 125px;
     width: 30px;
     height: 2px;
     background-color: @basic-button;
 
     @media (min-width: @tablet-width) {
       width: 60px;
+      top: -80px;
+      left: 40px;
     }
   }
 
@@ -180,18 +200,23 @@
   @media (min-width: @tablet-width) {
     padding: 8px 0;
     border-bottom: 1px solid @special-grey;
+    margin-bottom: 0;
   }
 }
 
 .card__parametr {
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   width: 60px;
   text-align: left;
+  text-transform: capitalize;
+
 
   @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
     width: 100px;
     text-align: left;
   }
@@ -200,13 +225,15 @@
 .card__value {
   margin: 0;
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   width: 75px;
   text-align: right;
 
+
   @media (min-width: @tablet-width) {
+    font-size: 16px;
     width: 100px;
   }
 }
@@ -214,12 +241,11 @@
 .card__button {
   display: block;
   box-sizing: border-box;
-  padding: 8px 0;
+  padding: 10px 0;
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
+
     margin: 0 38px;
     width: 248px;
   }
@@ -236,6 +262,8 @@
   padding: 8px 0;
   width: 280px;
   color: @special-dark-grey;
+  font-size: 16px;
+  line-height: 20px;
 
   &:hover {
     background-color: #ebebeb;
@@ -259,14 +287,20 @@
 }
 
 .card__description {
+  margin: 0;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   text-align: center;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
+    width: 168px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
   }
 }

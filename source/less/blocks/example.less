@@ -3,7 +3,7 @@
   color: @basic-black;
 
   @media (min-width: @tablet-width) {
-    background-image: linear-gradient(to bottom, @basic-white 70%, @basic-grey 70%);
+    background-image: linear-gradient(to bottom, @basic-white 56%, @basic-grey 56%);
   }
 
   @media (min-width: @desktop-width) {
@@ -12,25 +12,29 @@
 }
 
 .example__wrapper {
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   padding-top: 25px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 43px;
+    padding-bottom: 62px;
     padding-top: 23px;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 70px;
-    padding-top: 70px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
   }
 }
 
 .example__content {
+  margin-bottom: 40px;
+
   @media (min-width: @desktop-width) {
+    margin-bottom: 0;
     width: 546px;
+    padding-top: 50px;
   }
 }
 
@@ -46,6 +50,11 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 146px;
   }
 }
 
@@ -62,9 +71,14 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+    margin-bottom: 65px;
   }
 }
-
 
 .example__site {
 
@@ -89,26 +103,29 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     width: 366px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
 .example__item {
   position: relative;
   margin: 0;
-  padding: 0;
+  margin-bottom: 14px;
+  padding: 14px 0 18px 0;
   display: block;
   box-sizing: border-box;
   border: 1px solid @special-grey;
   border-radius: 3px;
   width: 124px;
-  padding-top: 14px;
-  padding-bottom: 18px;
 
-  &:not(:last-child) {
+  &:nth-child(odd) {
     margin-right: 32px;
   }
 
@@ -125,6 +142,11 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
@@ -149,6 +171,7 @@
     padding: 0;
     width: 142px;
     left: 10px;
+    top: 65px;
     font-size: 14px;
     line-height: 14px;
     background-color: @basic-white;
@@ -175,21 +198,29 @@
     width: 174px;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 20px;
     width: 366px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .example__charge {
+  @media (min-width: @tablet-width) {
+    padding: 12px 0;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 162px;
+    width: 174px;
     text-align: left;
+    padding: 10px 0;
   }
 }
 

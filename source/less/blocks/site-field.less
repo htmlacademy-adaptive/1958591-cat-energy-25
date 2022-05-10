@@ -18,8 +18,26 @@
 }
 
 .site-field--picture {
-  @media (min-width: @desktop-width) {
+  margin-bottom: 1px;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
     &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(odd) {
       margin-right: 80px;
     }
   }
@@ -52,8 +70,7 @@
   text-align: left;
   text-transform: uppercase;
   color: @special-dark-grey;
-  padding: 13px 0;
-  padding-left: 15px;
+  padding: 13px 0 13px 15px;
   border: none;
   outline: 1px solid @basic-border;
 
@@ -74,7 +91,14 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 29px;
-    padding: 11px 0;
-    padding-left: 15px;
+    padding: 11px 0 11px 25px;
+  }
+}
+
+.site-field--picture input {
+  padding: 13px 0 13px 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 25px;
   }
 }

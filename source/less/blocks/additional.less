@@ -11,6 +11,10 @@
     height: 2px;
     background-color: @basic-green;
     z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 55px;
+    }
   }
 }
 
@@ -18,11 +22,11 @@
   margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 30px;
   }
 }
 
@@ -33,14 +37,14 @@
   font-weight: 400;
   text-align: left;
   color: @basic-black;
-  margin-bottom: 39px;
+  margin-bottom: 25px;
   padding: 0 20px;
   margin-left: -20px;
   display: inline-block;
   background-color: @basic-white;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 62px;
+    margin-bottom: 56px;
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
@@ -63,18 +67,27 @@
 }
 
 .additional__item {
-  @media (min-width: @tablet-width) {
-    width: 310px;
+  margin-bottom: 5px;
 
-    &:nth-child(1n) {
-      margin-right: 35px;
-      margin-bottom: 42px;
+  @media (min-width: @tablet-width) {
+    width: 295px;
+    margin-bottom: 38px;
+
+    &:nth-child(odd) {
+      margin-right: 50px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 270px;
-    margin-right: 35px;
+    width: 245px;
+
+    &:nth-child(odd) {
+      margin-right: 75px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
   }
 }
 
@@ -87,26 +100,26 @@
   text-align: left;
   text-transform: uppercase;
   color: @basic-black;
-  padding-left: 45px;
+  padding-left: 28px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 29px;
-    padding-left: 88px;
+    padding-left: 56px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 29px;
-    padding-left: 88px;
+    padding-left: 58px;
     width: 250px;
   }
 }
 
 .additional__input {
   position: absolute;
-  top: -7px;
-  left: -15px;
+  top: 0;
+  left: -20px;
   appearance: none;
 
   margin: 0;
@@ -121,7 +134,8 @@
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
-    left: 15px;
+    left: 0;
+    top: -5px;
   }
 
   &:focus {
