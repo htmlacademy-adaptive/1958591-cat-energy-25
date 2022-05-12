@@ -16,7 +16,6 @@ ymaps.ready(function () {
       searchControlProvider: 'yandex#search'
     }),
 
-    // Создаём макет содержимого.
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
     ),
@@ -25,15 +24,9 @@ ymaps.ready(function () {
       hintContent: 'HTML ACADEMY',
       balloonContent: 'ул. Большая Конюшенная, д. 19/8 Санкт-Петербург'
     }, {
-      // Опции.
-      // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
-      // Своё изображение иконки метки.
-      iconImageHref: '../img/map-pin-big.png',
-      // Размеры метки.
+      iconImageHref: './img/pin.png',
       iconImageSize: [113, 106],
-      // Смещение левого верхнего угла иконки относительно
-      // её "ножки" (точки привязки).
       iconImageOffset: [0, 0]
     })
 

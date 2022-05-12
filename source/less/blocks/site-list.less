@@ -35,6 +35,10 @@
       margin-right: 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 36px;
+  }
 }
 
 .site-list__link {
@@ -109,7 +113,7 @@
   }
 }
 
-.site-list__item--dark {
+.site-list--dark .site-list__item--active {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @basic-green;
 
@@ -123,7 +127,7 @@
   }
 }
 
-.site-list__link--dark {
+.site-list--dark .site-list__link {
   color: @basic-black;
 
   &:hover {
